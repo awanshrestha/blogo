@@ -1,0 +1,53 @@
+.footer{
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogo-logo{
+    width: 40px;
+    margin-top: 40px;
+}
+
+.footer-left-first{
+    margin: 15px 0 8px;
+}
+
+.footer-left-second{
+    margin: 15px 0;
+}
+
+.footer-left-first a, .footer-left-second a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-right{
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.footer-right h4{
+    color: #999999;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.download-from-store{
+    width: 120px;
+    margin: 5px;
+}
+
+.copyright-text{
+    font-size: 15px;
+    color: #999999;
+}

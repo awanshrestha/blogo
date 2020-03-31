@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Aleo&display=swap');
 
+.header-top{
+    position: sticky;
+    top: 0;
+    background-color: #effaff;
+    z-index: 100;
+}
+
+.header-scrolled{
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    position: sticky;
+    top: 0;
+    transition: all 1s ease-in-out;
+    background-color: #fff;
+    z-index: 100;
+}
+
 .top-nav-bar{
     display: flex;
     justify-content: space-between;
@@ -13,7 +29,7 @@
     color: #12a4e2;
     font-size: 36px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 13px;
     cursor: pointer;
     letter-spacing: -1px;
 }
@@ -53,3 +69,13 @@
 .top-nav-bar .get-started-button:hover{
     background: #087dae;
 }
+
+@media all and (max-width: 700px) {
+    .top-nav-bar ul a:nth-child(-n+3){
+        display: none;
+    }
+    .top-nav-bar{
+        width: 90%;
+    }
+}
+

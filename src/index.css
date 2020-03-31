@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Rubik', 'Segoe UI', 'Roboto', 'Oxygen',
