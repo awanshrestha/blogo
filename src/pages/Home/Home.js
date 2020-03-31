@@ -1,7 +1,9 @@
 import React from 'react';
+import Topics from './Topics';
 import './home.css';
 
 const writingBlog = require('../../assets/images/writing-blog.png');
+const community = require('../../assets/images/community.png');
 
 function Home(){
     return(
@@ -26,6 +28,31 @@ function Home(){
                         </div>
                 </div>
             </div>
+           </div>
+           <div>
+               <Topics/>
+           </div>
+           <div className = 'call-to-action'>
+               <a href="#" className = 'call-to-action-start'>Get Started</a> <br/> <br/>
+               <p>Already have an account? <a href="#"> Sign in</a></p>
+           </div>
+           <div className = 'join-the-writers'>
+               <div className = 'writers-photo'>
+                   <img src={community} alt="Community of writers"/>
+               </div>
+               <div>
+                   <h3>Join the community of writers</h3>
+                   <h5>Blogo is more than just a blog. We are a family. And we heartly welcome you to our family.</h5>
+               </div>
+               <div>
+                    <form>
+                        <input type="text" placeholder = 'First name'/>
+                        <br/>
+                        <input type="email"  placeholder = 'Enter your email'/>      
+                        <br/>
+                        <input type="submit" value="Join now" />
+                    </form>
+               </div>
            </div>
         </div>
     );

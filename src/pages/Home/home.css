@@ -1,5 +1,6 @@
 .homepage{
     min-height: calc(100vh - 290px);
+    background-color: #FAF9F7;
 }
 
 .homepage-top-container{
@@ -44,6 +45,96 @@
     color: #4e4e4ec2;
 }
 
+.call-to-action{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
 
+.call-to-action a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #12A4E2;
+}
 
+.call-to-action > a{
+    padding: 13px 80px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    cursor: pointer;
+    background: #12A4E2;
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: pre;
+    outline: none;
+    transition: all .3s ease;
+}
 
+.call-to-action > a:hover , .join-the-writers input[type = "submit"]:hover{
+    background: #087dae;
+}
+
+.join-the-writers{
+    background-color: #D8F3FF;
+    margin:0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.writers-photo img{
+    width: 320px;
+    margin: 100px 20px 20px;
+}
+
+.join-the-writers h3{
+    font-size: 35px;
+    line-height: 40px;
+    margin: 15px 10px 5px;
+    color: rgb(75, 75, 75);
+}
+
+.join-the-writers h5{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 15px 10px 20px;
+    color: rgba(114, 114, 114, 0.753);
+}
+
+.join-the-writers input[type = "text"], .join-the-writers input[type = "email"]{
+    border: 2px solid #fff;
+    margin: 5px;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: normal;
+    box-sizing: border-box;
+    outline: none;
+    overflow: visible;
+    width: 300px;
+    transition: all .3s ease;
+}
+
+.join-the-writers input[type = "text"]:focus,.join-the-writers input[type = "email"]:focus{
+    border: 2px solid rgb(93, 186, 240);
+}
+
+.join-the-writers input[type = "submit"]{
+    margin: 5px 20px 50px;
+    border: none !important;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px;
+    border-radius: 6px;
+    width: 300px;
+    background-color:  #12A4E2;
+    color: #fff;
+    transition: all .3s ease;
+}
