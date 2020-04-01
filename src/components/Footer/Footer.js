@@ -8,7 +8,7 @@ const logo = require('../../assets/images/blogo-logo.png');
 function Footer(){
     return(
         <div className = 'footer'>
-            <div className = 'container'>
+            <div className = 'footer-container'>
                 <div className = 'footer-left'>
                     <div>
                         <img src={logo} alt="Blogo Logo" className = 'blogo-logo'/>
