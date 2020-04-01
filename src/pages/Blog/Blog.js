@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 import './blog.css';
+import blogPost from '../../data/blog.json';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Blogtile from '../../components/Blogtile/Blogtile';
 const backgroundSvg = require('../../assets/svg/header.svg');
 
 function Blog(){
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        const posts = blogPost.data;
+        setPosts(posts);
+    }, [posts]);
+
     return(
         <div className = 'blogpage'>
             <div className = 'background-svg'>
@@ -18,9 +27,15 @@ function Blog(){
             <div className = 'blogpage-container'>
                 <div className = 'blogpage-featured-blogs'>
                     <div className = 'blog-tile'>
-                        <Blogtile/>
-                        <Blogtile/>
-                        <Blogtile/>
+                        {
+                            posts.map( post => {
+                                return(
+                                    <Link to={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
+                                        <Blogtile/>
+                                    </Link>
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className = 'blogpage-sidebar'>

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Blog from './pages/Blog/Blog';
+import Post from './pages/Post/Post';
 import About from './pages/About/About';
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
@@ -15,6 +16,7 @@ function App() {
           <Navbar />
           <Switch>
             <Route path = '/' exact component = {Home}/>
+            <Route path = '/blog/:slug' component = {Post}/>
             <Route path = '/blog' component = {Blog}/>
             <Route path = '/about' component = {About}/>
             <Route path = '/login' component = {Login}/>
