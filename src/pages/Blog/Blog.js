@@ -1,6 +1,7 @@
 import React from 'react';
 import './blog.css';
-
+import Sidebar from '../../components/Sidebar/Sidebar';
+import Blogtile from '../../components/Blogtile/Blogtile';
 const backgroundSvg = require('../../assets/svg/header.svg');
 
 function Blog(){
@@ -11,6 +12,19 @@ function Blog(){
                 <div className = 'blog-image-center-text'>
                     <h1>Welcome to the BLOGO</h1>
                     <p>Write and Unleash your Power to Inspire</p>
+                </div>
+            </div>
+
+            <div className = 'blogpage-container'>
+                <div className = 'blogpage-featured-blogs'>
+                    <div className = 'blog-tile'>
+                        <Blogtile/>
+                        <Blogtile/>
+                        <Blogtile/>
+                    </div>
+                </div>
+                <div className = 'blogpage-sidebar'>
+                    <Sidebar/>
                 </div>
             </div>
            
