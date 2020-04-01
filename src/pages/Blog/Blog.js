@@ -30,8 +30,8 @@ function Blog(){
                         {
                             posts.map( post => {
                                 return(
-                                    <Link to={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
-                                        <Blogtile/>
+                                    <Link key={post.id} to={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
+                                        <Blogtile heading = {post.blogTitle} date = {post.postedOn} author={post.author} imageToShow={post.blogImage} wordsToShow={post.blogText.slice(0,200)+'...'}/>
                                     </Link>
                                 )
                             })

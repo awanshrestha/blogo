@@ -1,24 +1,24 @@
 import React from 'react';
 import './blogtile.css';
 
-const blogimage = require('../../assets/images/unnamed.jpg');
+function Blogtile(props){
 
-function Blogtile(){
     return(
         <div className = 'blogtile'>
             <div className = 'blogtile-container'>
-                <h1>How to get yourself safe during quarantine.</h1>
-                <p>
+                <h1>{props.heading}</h1>
+                <p> by &nbsp;
                     <span className = 'authorname-blogtile'>
-                        Bruce Wayne
+                        {props.author}
                     </span>
+                    on &nbsp;
                     <span className = 'blogdate-blogtile'>
-                        April 9, 2020
+                        {props.date}
                     </span>
                 </p>
-                <img src={blogimage} alt="Blog Post Title"/>
+                <img src={require('../../assets/images/' + props.imageToShow)} alt="Blog Post Title"/>
                 <p className = 'blogtile-blog-content'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint architecto reprehenderit fugiat quibusdam vero consequatur iure, officiis accusamus est repellendus officia veritatis excepturi eos perferendis debitis dolorum, eveniet molestias blanditiis. Autem architecto 
+                    {props.wordsToShow}
                 </p>
             </div>
         </div>
