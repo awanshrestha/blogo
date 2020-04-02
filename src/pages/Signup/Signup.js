@@ -22,7 +22,7 @@ function Signup(){
                     <p className = 'login-unavailable'>We will be accepting new sign ups very very soon. <br/> Stay tuned.</p>
                 </div>
                 <div>
-                    <p>Alread got an account? - <a href="#">Log in</a></p>
+                    <p>Already got an account? - <a href="#">Log in</a></p>
                 </div>
             </div>
         </div>

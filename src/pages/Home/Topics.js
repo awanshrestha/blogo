@@ -13,7 +13,7 @@ function Topics(){
                <div className = 'topic-list-home'>
                        {topics.map( topic =>{
                            return (
-                               <li className = 'topic-in-homepage'>
+                               <li className = 'topic-in-homepage' key = {topic}>
                                    <a href="#">{topic}</a>
                                </li>
                            )

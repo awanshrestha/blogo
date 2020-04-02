@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Aleo&display=swap');
 
-.header-top{
+/* .header-top{
     position: sticky;
     top: 0;
     background-color: #effaff;
     z-index: 100;
-}
+} */
 
-.header-scrolled{
+/* .header-scrolled{
     box-shadow: 0 2px 10px rgba(0,0,0,.1);
     position: sticky;
     top: 0;
     transition: all 1s ease-in-out;
     background-color: #fff;
     z-index: 100;
-}
+} */
 
 .top-nav-bar{
     display: flex;
